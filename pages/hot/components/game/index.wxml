@@ -1,0 +1,6 @@
+<view class="cover-game">
+  <image src="{{cover}}" mode="widthFix"></image>
+  <text class="cover-type">
+    <text style="color: #fff;text-shadow: 0 0 1px rgba(0,0,0,.15);">游</text>戏。
+  </text>
+</view>

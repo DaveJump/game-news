@@ -1,0 +1,6 @@
+.image-button {
+  border: none !important;
+  display: inline-block;
+  padding: 0;
+  line-height: 1;
+}

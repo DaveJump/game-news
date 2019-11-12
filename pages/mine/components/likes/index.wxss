@@ -1,0 +1,26 @@
+.my-likes__title {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #a7a7a7;
+  text-align: center;
+}
+
+.my-likes__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 16rpx;
+  justify-content: space-between;
+  padding-bottom: 150rpx;
+}
+
+.no-data-icon {
+  width: 110rpx;
+  height: 110rpx;
+  margin-bottom: 10rpx;
+}
+
+.empty-title {
+  font-size: 24rpx;
+  margin-top: 100rpx;
+}

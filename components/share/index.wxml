@@ -1,0 +1,9 @@
+<view class="operation__share" style="{{shareWrapStyle}}">
+  <button open-type="share" plain hover-class="none" class="image-button">
+    <image
+      class="operation__icon-share"
+      bind:tap="handleShare"
+      src="/images/icon/share.png">
+    </image>
+  </button>
+</view>

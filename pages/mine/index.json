@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cover-info": "./components/cover-info/index",
+    "likes": "./components/likes/index"
+  }
+}

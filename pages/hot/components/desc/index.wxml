@@ -1,0 +1,8 @@
+<view class="hot-desc">
+  <view class="hot-desc__sum">
+    <text>{{desc}}</text>
+  </view>
+  <view class="hot-desc__title">
+    <text>{{title}}</text>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+.cover-type{
+  position: absolute;
+  bottom: -120rpx;
+  left: 20rpx;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 60rpx;
+  z-index: 9;
+}

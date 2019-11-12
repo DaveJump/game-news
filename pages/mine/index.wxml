@@ -1,0 +1,4 @@
+<view>
+  <cover-info id="cover-info" />
+  <likes id="likes" />
+</view>

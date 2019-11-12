@@ -1,0 +1,14 @@
+<view class="like-item" bind:tap="navigateToDetail">
+  <view class="like-item__type">
+    <text>{{item.type === 'game' ? '游戏' : '音乐'}}</text>
+    <like-icon item="{{item}}" />
+  </view>
+  <view class="like-item__cover">
+    <image
+      src="{{item.cover}}"
+      class="{{item.type === 'game' ? 'game-cover' : 'music-cover'}}"
+      mode="aspectFill">
+    </image>
+  </view>
+  <view class="like-item__title">{{item.title}}</view>
+</view>

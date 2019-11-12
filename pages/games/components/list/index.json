@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "game-item": "../game-item/index"
+  }
+}

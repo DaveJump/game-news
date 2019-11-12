@@ -1,0 +1,6 @@
+<like
+  like="{{true}}"
+  show-total-like="{{false}}"
+  like-wrap-style="padding: 0;display: flex;align-items: center;"
+  like-icon-style="width: 34rpx;height: 34rpx;"
+  bind:like="handleLike" />

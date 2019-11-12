@@ -1,0 +1,26 @@
+/* .like-item__type .operation__like {
+  padding-top: 0;
+}
+
+.like-item__type .operation__icon-like {
+  width: 34rpx;
+  height: 34rpx;
+} */
+
+.operation__like {
+  display: inline-block;
+  padding-top: 16rpx;
+}
+
+.operation__icon-like {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.operation__like-num {
+  position: relative;
+  top: -30rpx;
+  left: 2rpx;
+  color: #5a5a5a;
+  font-size: 23rpx;
+}

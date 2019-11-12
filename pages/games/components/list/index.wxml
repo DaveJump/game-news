@@ -1,0 +1,5 @@
+<view class="game-list">
+  <block wx:for="{{games}}" wx:key="id">
+    <game-item item="{{item}}" />
+  </block>
+</view>

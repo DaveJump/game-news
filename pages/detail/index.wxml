@@ -1,0 +1,4 @@
+<view>
+  <info-game wx:if="{{type === 'game'}}" detail="{{detail}}" id="info-game" />
+  <info-music wx:if="{{type === 'music'}}" detail="{{detail}}" />
+</view>

@@ -1,0 +1,53 @@
+.like-item {
+  height: 380rpx;
+  flex-basis: 330rpx;
+  margin: 12rpx;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+
+.like-item{
+  box-sizing: border-box;
+}
+
+.like-item__type {
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-item__type text {
+  display: inline-block;
+  padding: 6rpx 14rpx;
+  background-color: #f0f0f0;
+  color: #858585;
+  border-radius: 8rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+
+.like-item__cover {
+  text-align: center;
+}
+
+image.game-cover {
+  width: 330rpx;
+}
+
+image.music-cover {
+  width: 200rpx;
+  border-radius: 50%;
+}
+
+image.game-cover, image.music-cover {
+  height: 200rpx;
+}
+
+.like-item__title {
+  padding: 12rpx;
+  font-size: 24rpx;
+  width: 330rpx;
+  box-sizing: border-box;
+}

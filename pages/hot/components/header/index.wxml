@@ -1,0 +1,8 @@
+<view class="hot-header">
+  <view class="hot-header__left">
+    Top.<text style="font-size: 65rpx;">{{top}}</text>
+  </view>
+  <view class="hot-header__right">
+    <like num="{{likeNum}}" bind:like="handleLike" like="{{isLike}}" />
+  </view>
+</view>

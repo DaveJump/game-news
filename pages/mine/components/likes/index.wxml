@@ -1,0 +1,18 @@
+<view class="my-likes">
+  <block wx:if="{{likeList.length}}">
+    <view class="my-likes__title"><text>我喜欢的</text></view>
+    <view class="my-likes__list">
+      <block wx:for="{{likeList}}" wx:key="id">
+        <like-item item="{{item}}" />
+      </block>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="my-likes__title empty-title">
+      <image src="/images/icon/no-data.png" class="no-data-icon"></image>
+      <view>
+        <text>暂无喜欢的作品哦，赶紧动手点点爱心吧</text>
+      </view>
+    </view>
+  </block>
+</view>

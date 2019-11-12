@@ -1,0 +1,14 @@
+<view class="cover-music" slot="music">
+  <image
+    src="{{cover}}"
+    mode="aspectFill"
+    class="cover-music__cover animation {{playing ? 'playing' : 'paused'}}" />
+  <image
+    class="cover-music__button"
+    src="{{playing ? playingBtnSrc : pausingBtnSrc}}"
+    bind:tap="handlePlayMusic" />
+  
+  <text class="cover-type">
+    <text>音乐。</text>
+  </text>
+</view>

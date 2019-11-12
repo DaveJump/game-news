@@ -1,0 +1,5 @@
+@import "../../style/page.wxss";
+
+page{
+  font-size: 28rpx;
+}

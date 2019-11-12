@@ -1,0 +1,16 @@
+{
+  "name": "games-news",
+  "version": "1.0.0",
+  "description": "new games instructions",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DaveJump",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.uniqby": "^4.7.0",
+    "miniprogram-computed": "^2.1.1"
+  }
+}

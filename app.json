@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/hot/index",
+    "pages/games/index",
+    "pages/mine/index",
+    "pages/detail/index"
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/hot/index",
+        "iconPath": "images/icon/hot.png",
+        "selectedIconPath": "images/icon/hot_s.png",
+        "text": "热门"
+      },
+      {
+        "pagePath": "pages/games/index",
+        "iconPath": "images/icon/games.png",
+        "selectedIconPath": "images/icon/games_s.png",
+        "text": "新游"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "images/icon/mine.png",
+        "selectedIconPath": "images/icon/mine_s.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "新游易",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

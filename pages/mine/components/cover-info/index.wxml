@@ -1,0 +1,26 @@
+<view class="cover-info">
+  <view class="cover-info__cover">
+    <image class="cover__image" src="/images/bg/mine_bg.jpg" mode="widthFix"></image>
+    <view class="cover__mask"></view>
+    <view class="cover__split-layer"></view>
+  </view>
+  <view class="cover-info__user">
+    <button wx:if="{{!hasUserInfo && canIUse}}" class="image-button login-button" open-type="getUserInfo" bind:getuserinfo="getUserInfo" plain>
+      <image src="/images/icon/user.png" style="width: 80rpx;height: 80rpx;"></image>
+    </button>
+    <block wx:else>
+      <image class="user__avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+      <text class="user__nick-name">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="cover-info__operation">
+    <view class="operation__about">
+      <image src="/images/icon/about.png"></image>
+      <text class="operation__text">关于新游易</text>
+    </view>
+    <view class="operation__collection">
+      <text style="font-size: 40rpx;height: 35rpx;transform: translateY(-12rpx);color: #515151;">{{collectionNum}}</text>
+      <text class="operation__text">我的游戏</text>
+    </view>
+  </view>
+</view>

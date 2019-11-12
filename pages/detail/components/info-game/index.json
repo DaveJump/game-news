@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "like": "/components/like/index",
+    "share": "/components/share/index",
+    "comment-input": "../comment-input/index"
+  }
+}

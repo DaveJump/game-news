@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "header": "../components/header/index",
+    "game": "../components/game/index",
+    "music": "../components/music/index",
+    "desc": "../components/desc/index"
+  }
+}

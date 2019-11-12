@@ -1,0 +1,9 @@
+<view class="operation__like" style="{{likeWrapStyle}}">
+  <image
+    class="operation__icon-like"
+    src="{{isLike ? likeSrc : unlikeSrc}}"
+    catch:tap="handleTapLike"
+    style="{{likeIconStyle}}">
+  </image>
+  <text wx:if="{{showTotalLike}}" class="operation__like-num">{{likeNum}}</text>
+</view>

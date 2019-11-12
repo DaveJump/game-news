@@ -1,0 +1,4 @@
+.detail-info-music{
+  padding-top: 50rpx;
+  position: relative;
+}

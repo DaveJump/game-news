@@ -1,0 +1,10 @@
+<view class="detail-info-music">
+  <music id="music" cover="{{detail.cover}}" src="{{detail.music}}" title="{{detail.title}}" />
+  <like
+    num="{{likeNum}}"
+    bind:like="handleLike"
+    like="{{isLike}}"
+    like-wrap-style="position: absolute;top: 24rpx;left: 40rpx;" />
+  <share share-wrap-style="position: absolute;top: 44rpx;right: 40rpx;" />
+  <desc title="{{detail.title}}" desc="{{detail.desc}}" />
+</view>

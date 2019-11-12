@@ -1,0 +1,16 @@
+<view>
+  <swiper style="height: calc(100vh - 60px);" indicator-dots indicator-color="#dbdbdb" indicator-active-color="#d81e06">
+    <block wx:for="{{hotList}}" wx:key="id">
+      <swiper-item>
+        <view class="hot-list">
+          <header top="{{item.top}}" like="{{item.like}}" hot-info="{{item}}" />
+          <view class="hot-cover">
+            <game wx:if="{{item.type === 'game'}}" cover="{{item.cover}}" />
+            <music id="{{'music-' + item.id}}" wx:if="{{item.type === 'music'}}" cover="{{item.cover}}" src="{{item.music}}" title="{{item.title}}" />
+          </view>
+          <desc title="{{item.title}}" desc="{{item.desc}}" />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

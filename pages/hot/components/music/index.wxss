@@ -1,0 +1,48 @@
+@import "../../style/index.wxss";
+
+.cover-music{
+  text-align: center;
+  position: relative;
+}
+
+.cover-music image.cover-music__cover {
+  width: 469rpx;
+  height: 469rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes rotation{
+  from{
+    transform: rotateZ(0);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+.cover-music image.cover-music__cover.animation{
+  animation-name: rotation;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.cover-music image.cover-music__cover.playing{
+  animation-play-state: running;
+}
+
+.cover-music image.cover-music__cover.paused{
+  animation-play-state: paused;
+}
+
+.cover-music image.cover-music__button{
+  width: 110rpx;
+  height: 110rpx;
+  position: absolute;
+  /* left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0); */
+  bottom: -65rpx;
+  right: 40rpx;
+}

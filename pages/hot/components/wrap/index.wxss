@@ -1,0 +1,4 @@
+.hot-cover {
+  height: 469rpx;
+  position: relative;
+}

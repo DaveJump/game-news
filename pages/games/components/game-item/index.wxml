@@ -1,0 +1,14 @@
+<view class="game-item" bind:tap="navigateToDetail">
+  <view class="game-item__info">
+    <view class="game-item__title">{{item.title}}</view>
+    <view class="game-item__short">{{item.short}}</view>
+    <view class="game-item__tags">标签: {{item.tags}}</view>
+  </view>
+  <view class="game-item__cover">
+    <image
+      src="{{item.cover}}"
+      class="game-cover"
+      mode="aspectFill">
+    </image>
+  </view>
+</view>

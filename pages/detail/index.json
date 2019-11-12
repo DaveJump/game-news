@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "info-game": "./components/info-game/index",
+    "info-music": "./components/info-music/index"
+  }
+}

@@ -1,0 +1,5 @@
+@import "../../style/index.wxss";
+
+.cover-game image {
+  width: 100%;
+}

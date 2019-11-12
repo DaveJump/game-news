@@ -1,0 +1,4 @@
+<!--pages/hot/index.wxml-->
+<view>
+  <wrap id="hot-wrap" />
+</view>

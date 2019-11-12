@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "wrap": "./components/wrap/index"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "music": "/pages/hot/components/music/index",
+    "desc": "/pages/hot/components/desc/index",
+    "like": "/components/like/index",
+    "share": "/components/share/index"
+  }
+}

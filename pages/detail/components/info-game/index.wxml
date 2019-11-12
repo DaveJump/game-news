@@ -1,0 +1,69 @@
+<wxs src="../../../../utils/filter.wxs" module="filter" />
+
+<view class="detail-info">
+  <view class="detail-block detail-info__cover">
+    <image src="{{detail.cover}}" mode="widthFix"></image>
+  </view>
+  <view class="detail-block detail-info__info">
+    <view class="info-title">
+      <text>{{detail.title}}</text>
+      <view>
+        <like
+          num="{{likeNum}}"
+          bind:like="handleLike"
+          like="{{isLike}}"
+          like-wrap-style="padding: 0;margin-right: 30rpx;" />
+        <share share-wrap-style="padding-top: 2rpx;" />
+      </view>
+    </view>
+    <view class="info-basic">
+      <view class="info-basic__item">
+        <text class="info-basic__item-label">游戏类型</text>
+        <text class="info-basic__item-content">{{detail.info.type}}</text>
+      </view>
+      <view class="info-basic__item">
+        <text class="info-basic__item-label">游戏制作</text>
+        <text class="info-basic__item-content">{{detail.info.producer}}</text>
+      </view>
+      <view class="info-basic__item">
+        <text class="info-basic__item-label">游戏发行</text>
+        <text class="info-basic__item-content">{{detail.info.publisher}}</text>
+      </view>
+      <view class="info-basic__item">
+        <text class="info-basic__item-label">游戏平台</text>
+        <text class="info-basic__item-content">{{detail.info.platform}}</text>
+      </view>
+      <view class="info-basic__item">
+        <text class="info-basic__item-label">上市时间</text>
+        <text class="info-basic__item-content">{{detail.info.publishDate}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="detail-block detail-info__desc">
+    <view class="detail-block__title"><text>游戏介绍</text></view>
+    <view class="detail-block__content">{{detail.desc}}</view>
+  </view>
+  <view class="detail-block detail-info__comment">
+    <view class="detail-block__title"><text>留言</text></view>
+    <view class="detail-block__content">
+      <block wx:if="{{comments.length}}">
+        <view class="comment-item" wx:for="{{comments}}" wx:key="index">
+          <view class="comment-item__avatar">
+            <image src="{{item.avatarUrl}}" mode="aspectFill"></image>
+          </view>
+          <view class="comment-item__info">
+            <view class="comment-item__info-header">
+              <text>{{item.nickName}}</text>
+              <text>{{filter.formatTimeFriendly(item.time)}}</text>
+            </view>
+            <view class="comment-item__info-content">{{item.content}}</view>
+          </view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="empty-comments">暂无留言</view>
+      </block>
+    </view>
+  </view>
+  <comment-input game-id="{{detail.id}}" bind:commentset="getCommentsByGameId" />
+</view>

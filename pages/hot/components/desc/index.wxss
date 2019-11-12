@@ -1,0 +1,9 @@
+.hot-desc{
+  margin-top: 130rpx;
+  font-size: 32rpx;
+  padding: 0 40px;
+}
+.hot-desc__title{
+  margin-top: 10px;
+  text-align: right;
+}

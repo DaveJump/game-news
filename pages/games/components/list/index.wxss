@@ -1,0 +1,4 @@
+.game-list {
+  padding: 0 16rpx;
+  padding-bottom: 150rpx;
+}
