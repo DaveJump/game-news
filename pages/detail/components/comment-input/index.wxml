@@ -1,13 +1,16 @@
 <view class="comment-input">
-  <input
-    placeholder-style="color: #a7a7a7;font-size: 28rpx;"
-    confirm-type="send"
-    value="{{comment}}"
-    disabled="{{!userInfo}}"
-    placeholder="{{userInfo ? '留下您的一些小想法吧(200字以内)' : '留言之前需要先授权哦'}}"
-    maxlength="200"
-    fixed
-    bindinput="handleInput"
-    bindconfirm="handleConfirm">
-  </input>
+  <view class="comment-input__wrap">
+    <image src="/images/icon/edit.png" mode="widthFix"></image>
+    <input
+      placeholder-style="color: #a7a7a7;font-size: 28rpx;"
+      confirm-type="send"
+      value="{{comment}}"
+      disabled="{{!userInfo}}"
+      placeholder="{{userInfo ? '留下您的一些小想法吧(200字以内)' : '留言之前需要先授权哦'}}"
+      maxlength="200"
+      fixed
+      bindinput="handleInput"
+      bindconfirm="handleConfirm">
+    </input>
+  </view>
 </view>

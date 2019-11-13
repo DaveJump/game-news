@@ -1,7 +1,8 @@
 .like-item {
+  /* flex-basis: 330rpx; */
+  /* margin: 12rpx; */
   height: 380rpx;
-  flex-basis: 330rpx;
-  margin: 12rpx;
+  width: 330rpx;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
   border-radius: 8rpx;
   background-color: #fff;

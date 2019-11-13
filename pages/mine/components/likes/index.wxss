@@ -7,10 +7,17 @@
 }
 
 .my-likes__list {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   padding: 0 16rpx;
-  justify-content: space-between;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30rpx;
+  margin-top: 10rpx;
+  justify-items: center;
+  align-items: center;
+  padding: 0 30rpx;
   padding-bottom: 150rpx;
 }
 
